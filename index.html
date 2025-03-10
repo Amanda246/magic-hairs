@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Hairs Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Magic Hairs Login</h2>
+        <form id="login">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+
+            <button type="submit">Login</button>
+        </form>
+
+        <button id="about-us-btn" onclick="window.location.href='aboutus.html'">About Us</button>
+        <div id="error"></div>
+    </div>
+    <script src="login.js"></script>
+	<script>
+	const users = [
+	// Sample users
+    { username: "John Doe", password: "12345678" },
+    { username: "Mary Jane", password: "abcdefgh" },
+    { username: "Amanda White", password: "password" },
+	{ username: "Badishka", password: "teacher1" }
+	];
+	</script>
+</body>
+</html>
